@@ -17,16 +17,16 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-function adiciona (x) {
-	floki = x;
-	return 'O valor da variável agora é: ' + floki +'.';
+function adiciona () {
+	floki = 10;
+	return 'O valor da variável agora é ' + floki + '.';
 };
 
 // Invoque a função criada acima.
-adiciona(10);
+adiciona();
 
 // Qual o retorno da função? (Use comentários de bloco).
-/* O valor da variável agora é: 10. */
+/* O valor da variável agora é 10. */
 
 /*
 Crie uma função com as seguintes características:
@@ -36,7 +36,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function multiplica(x, y, z) {
-	if(x === undefined || y === undefined || z === undefined){
+	if (x === undefined || y === undefined || z === undefined) {
 		return 'Preencha todos os valores corretamente!';
 	}
 	return x * y * z + 2;
@@ -46,13 +46,13 @@ function multiplica(x, y, z) {
 multiplica(1,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-// Preencha todos os valores corretamente!
+// 'Preencha todos os valores corretamente!'
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-multiplica(1,2,3);
+multiplica(1, 2, 3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-8
+// 8
 
 /*
 Crie uma função com as seguintes características:
@@ -80,8 +80,7 @@ function testa(x, y, z) {
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+testa(); //false
 testa(10); //10
 testa(10,20); //30
 testa(10,20,30); //1
-testa(); //false
-//Não tem como retorar null
